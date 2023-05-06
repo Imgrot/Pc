@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static '/index.css' %}">
+
+    <title>{{title}}</title>
+</head>
+
+
+<body>
+    <script>
+        function mostrar_electro() {
+            var volver = document.getElementById("volver");
+            var cuerpo = document.getElementById("cuerpo");
+            var p_ropa = document.getElementById("prod_ropa");
+            var p_elec = document.getElementById("prod_electro");
+            var p_jug = document.getElementById("prod_juguete");
+            var ropa = document.getElementById("ropa");
+            var juguete = document.getElementById("juguete");
+            var electrodom = document.getElementById("electro");
+            cuerpo.style.display = "none";
+            p_ropa.style.display = "none";
+            ropa.style.display = "none";
+            p_elec.style.display = "block";
+            electrodom.style.display = "flex";
+            p_jug.style.display = "none";
+            juguete.style.display = "none";
+            volver.style.display = "block";
+        }
+        function mostrar_ropa() {
+            var volver = document.getElementById("volver");
+            var cuerpo = document.getElementById("cuerpo");
+            var p_ropa = document.getElementById("prod_ropa");
+            var p_elec = document.getElementById("prod_electro");
+            var p_jug = document.getElementById("prod_juguete");
+            var ropa = document.getElementById("ropa");
+            var juguete = document.getElementById("juguete");
+            var electrodom = document.getElementById("electro");
+            cuerpo.style.display = "none";
+            p_ropa.style.display = "block";
+            ropa.style.display = "flex";
+            p_elec.style.display = "none";
+            electrodom.style.display = "none";
+            p_jug.style.display = "none";
+            juguete.style.display = "none";
+            volver.style.display = "block";
+        }
+        function mostrar_juguetes() {
+            var volver = document.getElementById("volver");
+            var cuerpo = document.getElementById("cuerpo");
+            var p_ropa = document.getElementById("prod_ropa");
+            var p_elec = document.getElementById("prod_electro");
+            var p_jug = document.getElementById("prod_juguete");
+            var ropa = document.getElementById("ropa");
+            var juguete = document.getElementById("juguete");
+            var electrodom = document.getElementById("electro");
+            cuerpo.style.display = "none";
+            p_ropa.style.display = "none";
+            ropa.style.display = "none";
+            p_elec.style.display = "none";
+            electrodom.style.display = "none";
+            p_jug.style.display = "block";
+            juguete.style.display = "flex";
+            volver.style.display = "block";
+        }
+        function volver() {
+            var volver = document.getElementById("volver");
+            var cuerpo = document.getElementById("cuerpo");
+            var p_ropa = document.getElementById("prod_ropa");
+            var p_elec = document.getElementById("prod_electro");
+            var p_jug = document.getElementById("prod_juguete");
+            var ropa = document.getElementById("ropa");
+            var juguete = document.getElementById("juguete");
+            var electrodom = document.getElementById("electro");
+            cuerpo.style.display = "flex";
+            p_ropa.style.display = "none";
+            ropa.style.display = "none";
+            p_elec.style.display = "none";
+            electrodom.style.display = "none";
+            p_jug.style.display = "none";
+            juguete.style.display = "none";
+            volver.style.display = "none";
+            
+        }
+    </script>
+    <div id="top">
+        <img style="height: 90px; vertical-align:middle;" src="{%static 'img/django_logo.png' %}">
+        <h1 class="display-3" style="color: white; vertical-align:middle;">{{title}}</h1>
+    </div>
+
+    <div id="separador"></div>
+
+    <div id="cuerpo">
+        <button type="button" id="boton" onClick="mostrar_electro()" class="btn btn-primary">{{pholder1}}</button>
+        <button type="button" id="boton" onClick="mostrar_juguetes()" class="btn btn-success">{{pholder2}}</button>
+        <button type="button" id="boton" onClick="mostrar_ropa()" class="btn btn-warning">{{pholder3}}</button>
+    </div>
+
+    <div id="prod_electro">
+        <h1 style="color: white; vertical-align:middle;font: size 140px;">{{pholder1}}</h1>
+    </div>
+
+    <div id="prod_juguete">
+        <h1 style="color: white; vertical-align:middle;font: size 140px;">{{pholder2}}</h1>
+    </div>
+
+    <div id="prod_ropa">
+        <h1 style="color: white; vertical-align:middle;font: size 140px;">{{pholder3}}</h1>
+    </div>
+
+    <div id="ropa">
+
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/ropa/pest_mask.jpg' %}">
+            <h3 id="texto">{{ropa1}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/ropa/terno.jpg' %}">
+            <h3 id="texto">{{ropa2}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/ropa/poleron_osito.jpg' %}">
+            <h3 id="texto">{{ropa3}}</h3>
+        </div>
+
+    </div>
+
+    <div id="electro">
+
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/electro/sandwichera.png' %}">
+            <h3 id="texto">{{electro1}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/electro/hervidor.png' %}">
+            <h3 id="texto">{{electro2}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/electro/switch.jpg' %}">
+            <h3 id="texto">{{electro3}}</h3>
+        </div>
+
+    </div>
+
+    <div id="juguete">
+
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/juguetes/insector.jpg' %}">
+            <h3 id="texto">{{jug1}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/juguetes/pelota.jpg' %}">
+            <h3 class="h3" id="texto">{{jug2}}</h3>
+        </div>
+        <div id="cajas">
+            <img style="height: 60%" src="{%static 'img/juguetes/legostar.jpg' %}">
+            <h5 class = "h5" id="texto">{{jug3}}</h5>
+        </div>
+
+    </div>
+
+    <div id="separador"></div>
+
+    <div id="volver">
+        <button type="button" id="boton" onClick="volver()" class="btn btn-danger">{{return}}</button>
+    </div>
+</body>
+
+</html>

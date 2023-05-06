@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ejemplo JS</title>
+    <script type="text/javascript">
+        function validar() {
+            if (document.frm_contactenos.txt_nombre.value.length == 0) {
+                alert('Debe ingresar el nombre');
+                document.frm_contactenos.txt_nombre.focus();
+                return false;
+            }
+            if (document.frm_contactenos.txt_email.value.length == 0) {
+                alert('Debe ingresar un email');
+                document.frm_contactenos.txt_email.focus();
+                return false;
+            }
+            document.frm_contactenos.action = "http://www.inacap.cl";
+            document.frm_contactenos.submit();
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm_contactenos" action="#" method="Post">
+        <ou>
+            <li><input type="text" name="txt_nombre"> Nombre</li>
+            <li><input type="text" name="txt_email"> Email</li>
+        </ou>
+        <input type="button" name="cmd_envio" value="Envio" onClick="javascript:void(validar());">
+
+</body>
+
+</html>

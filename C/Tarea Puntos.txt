@@ -1,0 +1,26 @@
+Entradas:
+1. Cantidad de Productos
+2. Precio de Productos
+3. Código de Productos
+4. Confirmar compra con puntos
+
+Procesos:
+1. Ingresar cantidad de compras
+2. Guardar cantidad de compras
+3. Ingresar códigos y precios
+4. Guardar códigos y precios
+5. Verificar precio y valor del código del producto
+6. Hacer conversión de puntos
+7. Comparar precio vs puntos
+8. Preguntar si desea comparar puntos
+9. Indicar si hay pago con puntos
+10. Verificar compra con puntos
+11. Acumular puntos
+12. Repetir 1-11 N veces
+13. Entregar Informe
+
+Salidas: 
+-Puntos Acumulados por compra
+-Total de Puntos
+-Saldo final de Puntos
+-Cantidad de compras realizadas con canje de puntos

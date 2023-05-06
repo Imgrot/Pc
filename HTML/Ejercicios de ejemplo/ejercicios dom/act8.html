@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="menú.html"><input type="button" value="volver" name = "volver" style="float:left"></a>
+    <H1 style="text-align:center">Actividad 8</H1>
+
+    <script>
+        let sueldo = eval(prompt("Ingrese su sueldo actual"))
+        let antiguedad = eval(prompt("Ingrese la antigüedad que tiene en el puesto (en años)"))
+        let sueldoNuevo
+
+        if (sueldo >= 500){
+            document.write("<h2>Usted no califica para un aumento de sueldo dado su salario actual.</h2>")
+        }
+        else {
+            document.write("<h2>Usted califica para un aumento de sueldo.</h2>")
+            if (antiguedad>=10){
+                sueldoNuevo = sueldo * 1.2
+                document.write("Su incremento fue de un 20%.<br>")
+            }
+            else{
+                sueldoNuevo = sueldo * 1.05
+                document.write("Su incremento fue de un 5%.")
+            }
+            document.write("Su nuevo sueldo mensual es de: ", sueldoNuevo)
+            
+        }
+
+    </script>
+
+</body>
+</html>

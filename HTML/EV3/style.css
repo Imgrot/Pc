@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .left {
+    display: block;
+    width: 50%;
+  }
+  .right {
+    display: block;
+    width: 50%;
+  }

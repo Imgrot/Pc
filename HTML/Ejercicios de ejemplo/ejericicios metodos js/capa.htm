@@ -1,0 +1,27 @@
+<HTML>
+ <HEAD>
+  <TITLE>P�gina con movimientos </TITLE>
+<Script language="JavaScript">
+ <!--
+
+ function MueveCapa(){
+   capa1.style.left= window.event.x -90;
+   capa1.style.top= window.event.y+40;
+   return true;
+  }
+
+//-->
+</Script>
+ </HEAD>
+<BODY onmousemove="MueveCapa();">
+
+ <CENTER>
+ <H3> Pantalla de Movimiento </H3>
+ </CENTER>
+
+ <div id="capa1" Style="position:absolute; left:20px; top:200px;visibility:visible;z-index:1;">  
+    <IMG src="mid.jpg" width=180 height=180>
+ </div>
+ 
+ </BODY>
+</HTML>

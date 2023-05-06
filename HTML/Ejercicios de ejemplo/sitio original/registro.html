@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="estilo.css"/>
+<title>La trattoria di Rocco</title>
+<script type="text/javascript">
+
+	function validar_vacio(alerta, control)
+	{
+		var e=false;
+		if(control!=null)
+		{
+			c=document.getElementById(control);
+			a=document.getElementById(alerta);
+			if(c.value=='')
+			{
+				a.style.visibility='visible';
+				c.style.backgroundColor="#f66";
+			}
+			else
+			{
+				a.style.visibility='hidden';
+				c.style.backgroundColor="#fff";
+				e=true;
+			}
+		}
+		return e;
+	}
+
+</script>
+</head>
+
+<body >
+
+<div id="contenedor">
+<div id="barra">
+	<div id="intra">
+    	<a href="#">Intranet</a>
+    </div>
+</div>
+<div id="encabezado">
+	<div id="img_encabezado">
+    	<img src="imagenes/ImagenPortada1.jpg" />
+    </div>
+    <div id="texto_titulo">
+    	<div class="titulo">La Trattor&iacute;a di Rocco</div>
+    	<div class="palabras">Un lugar de encuentro</div> 
+        <div id="menuh">
+        	<ul>
+                <li><a href="#menuh">Menu</a></li>
+                <li><a href="#menuh">Delivery</a></li>
+                <li><a href="#menuh">Registro</a></li>
+                <li><a href="#menuh">Reservas</a></li>
+            </ul>
+
+        </div>   
+    </div>
+    
+</div>
+<div id="cuerpo" class="palabras">
+  <div id="formulario">
+    <p class="titulo">Registro de nuevo usuario</p>
+    <p class="palabras">Ingresa tus datos todos son requeridos.</p>
+   
+   	  <form action="registro_usuario.php" method="post">
+        <div class="contenedor">Rut:</div>
+        <div class="contenedor"><input type="text" name="rut" class="text" id="rut" onblur="validar_vacio('error_rut', 'rut')"/> 
+          <span id="error_rut" class="alerta">*</span>
+        </div>
+        <div class="contenedor">Nombre:</div>
+        <div class="contenedor"><input type="text" name="nombre" class="text" id="nombre" onblur="validar_vacio('error_nombre', 'nombre')"/>
+        <span id="error_nombre" class="alerta">*</span>
+        </div>
+        <div class="contenedor">Direcci&oacute;n:</div>
+        <div class="contenedor"><input type="text" name="direccion" class="text" id="direccion" onblur="validar_vacio('error_direccion', 'direccion')"/>
+        <span id="error_direccion" class="alerta">*</span>
+        </div>
+        <div class="contenedor">Fono:</div>
+        <div class="contenedor"><input type="text" name="fono" class="text" id="fono" onblur="validar_vacio('error_fono', 'fono')"/>
+        <span id="error_fono" class="alerta">*</span>
+        </div>
+        <br />
+        <div class="contenedor"><input type="submit" class="btn" value="Enviar" /></div>
+        <div class="contenedor"><input type="reset" class="btn" value="Limpiar" /></div>
+      </form>
+    
+</div>
+</div>
+<div id="pie">
+	<p class="palabras">Sitio desarrollado por OpenDev</p>
+</div>
+</div>
+
+</body>
+</html>

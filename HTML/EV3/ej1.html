@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <title>Ejercicio 1</title>
+
+    <script type="text/javascript">
+        let primero = 0
+        let segundo = 1
+        let suma
+        function validar() {
+            let ingresado = Number(document.formulario.valor.value) * 1
+            if (isNaN(ingresado)) {
+                alert('Debe ingresar un número');
+                document.formulario.reset();
+                document.formulario.valor.focus();
+                return false;
+            }
+            if (ingresado == 0) {
+                alert('0 no es un valor válido');
+                document.formulario.reset();
+                document.formulario.valor.focus();
+                return false;
+            }
+            if (ingresado < 0) {
+                alert('No es posible agregar un número negativo');
+                document.formulario.reset();
+                document.formulario.valor.focus();
+                return false;
+            }
+
+            document.write('<input type="button" value="Volver" name="cmd_volver" onClick="Javascript:void(history.back());"> </input>')
+            document.write('<input type="button" value="Avanzar" name="cmd_avanzar" onClick="Javascript:void(history.forward());"> </input>')
+            document.write('<center><h1>Ejercicio 1</h1></center><br><br>')
+
+
+            if (ingresado == 1) {
+                document.write("La secuencia de Fibonacci para el valor '1' es:<br>1")
+            }
+            else {
+                document.write("La secuencia de Fibonacci para ", ingresado, " número(s) es:<br>",
+                    primero, "<br>", segundo, "<br>")
+            }
+
+            for (let i = 2; i < ingresado; i++) {
+                suma = primero + segundo
+                document.write(suma, "<br>")
+                primero = segundo
+                segundo = suma
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div style="background-color: red;padding:20px">
+        <div style="float:left">
+            <button type="button" class="btn btn-outline-primary" value="1" name="cmd_volver"
+                onClick="Javascript:void(history.back());"> Volver </button>
+            <button type="button" class="btn btn-outline-primary" value="2" name="cmd_avanzar"
+                onClick="Javascript:void(history.forward());"> Avanzar </button>
+        </div>
+        <h1 style="color: Black;text-align: center;">Ejercicio 1</h1>
+    </div>
+
+    <form align="center" name="formulario" action="#" method="Post">
+        Número <input type="text" name="valor" value="">
+        <button type="button" class="btn btn-outline-primary" name="cmd_envio" value="Envio"
+            onClick="javascript:void(validar())">Envio</button>
+    </form>
+</body>
+
+</html>

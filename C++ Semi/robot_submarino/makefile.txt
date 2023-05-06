@@ -1,0 +1,7 @@
+all:
+	g++ -c lib.cpp
+	g++ -c main.cpp
+	g++ -o salida lib.o main.o
+
+list:
+	ls

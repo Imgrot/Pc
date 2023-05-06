@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="menú.html"><input type="button" value="volver" name="volver" style="float:left"></a>
+    <h1 style="text-align:center">Actividad 10</h1>
+
+    <script>
+        let array = []
+        let negativos = 0
+        let positivos = 0
+        let mult15 = 0
+        let sumaPares = 0
+
+        array.push(prompt("Ingrese su número"))
+
+        for (let i = 2; i < 11; i++) {
+            array.push(prompt("Ingrese su siguiente número"))
+        }
+        
+        function Comprobar(valor) {
+            if (Number(valor) >= 0) { positivos++ }
+            if (Number(valor) < 0) { negativos++ }
+            if (Number(valor) % 15 == 0) { mult15++ }
+            if (Number(valor) % 2 == 0) { sumaPares += valor + sumaPares }
+        }
+        for (let a = 0; a < 10; a++) {
+            Comprobar(array[a])
+        }
+
+
+        document.write("Sus números ingresados fueron:<br>" + array 
+        + "<br> Entre los números ingresados:<br>")
+
+        document.write(positivos + " son positivos<br>")
+        document.write(negativos + " son negativos<br>")
+        document.write(mult15 + " son múltiplos de 15<br>")
+        document.write(sumaPares + " es la suma de todos los valores pares.")
+    </script>
+</body>
+
+</html>

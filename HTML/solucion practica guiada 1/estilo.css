@@ -1,0 +1,196 @@
+/* CSS Document */
+#contenedor
+{
+	width:800px;
+	height:100%;
+}
+#barra
+{
+	width:800px;
+	height:50px;
+	background-color:#BCB213;
+}
+
+#encabezado
+{
+	width:800px;
+	height:213px;
+	background-color:#F0687E;
+}
+
+
+
+#cuerpo
+{
+	width:800px;
+	height:357px;
+	background-color:#73B56B;
+}
+
+#pie
+{
+	width:800px;
+	height:50px;
+	background-color:#BCB213;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#foto
+{
+	margin-top:30px;
+	margin-left:30px;
+	float:left;
+}
+
+#texto
+{
+	float:left;
+	margin-top:30px;
+	margin-left:50px;
+	
+	width:430px;
+}
+#formulario
+{
+	float:left;
+	margin-top:30px;
+	margin-left:50px;
+	height:100%;
+	width:700px;
+}
+
+
+#texto_titulo
+{
+	margin-left:10px;
+	width:430px;
+	float:left;
+	height:200px;
+}
+
+.titulo
+{
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:26px;
+	text-align:justify;	
+}
+
+.palabras
+{
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:justify;
+	clear:both;
+	
+}
+
+#menuh {
+        /*font: 80% "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+		font-family:Arial, Helvetica, sans-serif;
+        margin-top: 130px;
+}
+
+#menuh ul, li {
+        list-style-type: none;
+}
+
+#menuh ul {
+        margin: 0;
+        padding: 0;
+}
+
+#menuh li {
+        float: left;
+		margin-left:2px;
+		margin-right:2px;
+}
+
+#menuh a {
+        text-decoration: none;
+        color:#333;
+        background-color:#FEAC9E;
+        display: block;
+        padding: 3px 10px;
+        text-align: center;
+        border: 2px solid #999;
+        border-width: 2px;
+		font-weight:bold;
+}
+
+
+#menuh a#primero {
+        border: 2px solid #999;
+}
+
+#menuh a:hover {
+        background: #DBEBF6;
+}
+
+#intra
+{
+	float:right;
+	text-align:center;
+	margin-top:26px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#img_encabezado
+{
+	margin-left:20px;
+	margin-top:10px;
+	margin-right:60px;
+	width:268px;
+	height:183px;
+	float:left;
+}
+img
+{
+	border: 2px solid #999;
+    border-width: 2px;
+}
+a {
+        text-decoration: none;
+        color:#333;
+        background-color:#FEAC9E;
+        padding: 3px 10px;
+        text-align: center;
+        border: 2px solid #999;
+        border-width: 2px;
+		font-weight:bold;
+}
+
+a:hover {
+        background: #DBEBF6;
+}
+.contenedor
+{
+	width:250px;
+	text-align:right;
+	float:left;
+	padding-right:15px;
+	margin-bottom:10px;
+	
+}
+
+input.text
+{
+	width:230px;
+}
+
+input.btn {
+  color:#050;
+  font: bold 84% 'trebuchet ms',helvetica,sans-serif;
+  background-color:#fed;
+  border:1px solid;
+  border-color: #696 #363 #363 #696;
+
+}
+
+.alerta
+{
+	color:#F00;
+	visibility:hidden;
+}

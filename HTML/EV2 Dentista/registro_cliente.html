@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Evaluación 2</title>
+</head>
+
+<body style="background-color:cadetblue">
+    <div><h2></h2></div>
+    <div class="encabezado">
+        <h3 style="text-align: right; padding-left: 10px;">Registre su hora aquí
+            <a href="registro_cliente.html">
+                <img src="imagenes/work-schedule-icon.png" alt="Agendado de hora" width="30" height="30">
+            </a>
+        </h3>
+        <h1> Clínica Dental Hugo Zúñiga</h1>
+        <p> Su salud dental está en buenas manos </p>
+
+        <a class="imagen" href="index.html">
+            <img src="imagenes/dentist_lounge.jpeg" alt="Salón del Dentista" width="300" height="200">
+        </a>
+    </div>
+    <div><h2></h2></div>
+
+    <img src="imagenes/registro.gif" alt="Registro" style="float:right" width="404" height="280">
+
+    <form action="datos guardados.html">
+        <ou>
+            <li class="lista"><input type="text"> Nombre</li>
+            <li class="lista"><input type="text"> RUT</li>
+            <li class="lista"><input type="text"> Dirección</li>
+            <li class="lista"><input type="text"> Número de Teléfono Fijo</li>
+            <li class="lista"><input type="text"> Número de Teléfono Celular</li>
+            <li class="lista"><input type="text"> E-Mail</li>
+            <li class="lista">
+                <select name="Disponibilidad"> 
+                    <option value="1">Lunes</option>
+                    <option value="2">Martes</option>
+                    <option value="3">Miércoles</option>
+                    <option value="4">Jueves</option>
+                    <option value="5">Viernes</option>
+                    <option value="6">Sabado</option>
+                    <option value="7">Domingo</option>
+                    </select>
+                    Seleccione en que día desea su atención
+            </li>
+            <li class="lista"> 
+                <select name="Disponibilidad"> 
+                    <option value="0">Todo el día</option>
+                    <option value="1">08:00 - 10:00</option>
+                    <option value="2">10:00 - 12:00</option>
+                    <option value="3">12:00 - 14:00</option>
+                    <option value="4">14:00 - 16:00</option>
+                    <option value="5">16:00 - 18:00</option>
+                    <option value="6">18:00 - 20:00</option>
+                    </select>
+                    Seleccione su disponibilidad de horario 
+            </li>
+            <li style="display:inline"><input type="submit" value="Registrar"></a>
+            <li style="display:inline"><input type="reset" value="Borrar datos"></li>
+        </ou>
+    </form>
+
+
+
+</body>
+
+</html>
