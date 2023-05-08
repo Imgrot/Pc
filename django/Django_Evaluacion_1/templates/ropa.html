@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -22,8 +22,9 @@
 
     <link rel="stylesheet" type="text/css" href="{% static '/index.css' %}">
 
-    <title>{{user}}</title>
+    <title>{{title}}</title>
 </head>
+
 
 <body>
     <div id="top">
@@ -33,35 +34,32 @@
 
     <div id="separador"></div>
 
-    <div id="user_data">
-        <h1 style="color: white; vertical-align:middle;font: size 140px;">{{user}}</h1>
+    <div id="prod_ropa">
+        <h1 style="color: white; vertical-align:middle;font: size 140px;">{{pholder3}}</h1>
     </div>
 
-    <div id="user_page">
+    <div id="ropa">
 
         <div class="cajas">
-
-            <div style="vertical-align: middle;" class="column">
-                <h3>Nombre: {{nombre}}</h3>
-                <h3>Apelido: {{apellido}}</h3>
-                <h3>Nacionalidad: {{nacionalidad}}</h3>
-            </div>
-
+            <img style="height: 60%" src="{%static 'img/ropa/pest_mask.jpg' %}">
+            <h3 id="texto">{{ropa1}}</h3>
         </div>
-
         <div class="cajas">
-            <img style="height: 80%" src="{%static 'img/xavier.jpg' %}">
+            <img style="height: 60%" src="{%static 'img/ropa/terno.jpg' %}">
+            <h3 id="texto">{{ropa2}}</h3>
         </div>
-
+        <div class="cajas">
+            <img style="height: 60%" src="{%static 'img/ropa/poleron_osito.jpg' %}">
+            <h3 id="texto">{{ropa3}}</h3>
+        </div>
 
     </div>
 
     <div id="separador"></div>
 
     <div id="volver">
-        <a href='../' id="boton" class="btn btn-danger boton">{{return}}</a>
+        <a href="/" class="btn btn-danger boton">{{return}}</button></a>
     </div>
-
 </body>
 
 </html>
