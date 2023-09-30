@@ -1,0 +1,91 @@
+  * {
+        margin: 5px 20px
+  }
+
+  body, html{
+      height: 100%;
+  }
+
+  body {
+        background-image: url("../static/img/supermarket.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+  }
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+  #separador {
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        background: linear-gradient(130deg, #13099e, #511872 41.07%, rgb(158, 39, 39), #511872, #13099e 76.05%);
+        height: 10px;
+  }
+
+  #cuerpo {
+        text-align: center;
+        justify-content: space-around;
+        align-items:center;
+        display: flex;
+  }
+
+  #prod_electro, #prod_ropa, #prod_juguete {
+        display: none;
+        align-items: center;
+        border-radius: 15px;
+        height: 70px;
+        background-color: rgb(78, 74, 74);
+        text-align: center;
+        font-size: 100px;
+
+  }
+
+  #top {
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        background-color: rgb(67, 67, 168);
+        justify-content: center;
+        height: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+  }
+
+  #boton {
+        font-size: 25px;
+        width: 240px;
+        height: 80px;
+  }
+
+  #cajas {
+        width: 300px;
+        height: 250px;
+        background: rgb(9, 100, 9);
+        border-radius: 15px;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        padding-left: 0px;
+        padding-right: 0px;
+  }
+
+  #ropa, #electro, #juguete {
+        display: none;
+        justify-content: center;
+        align-items: center;
+  }
+
+  #volver {
+        display: none;
+  }
+  #texto {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: white;
+      text-align: center;
+  }
